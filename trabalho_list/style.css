@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.473);
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+p{
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+    height: 350px;
+}
+
+input{
+    height: 30px;
+    width: 160px;
+}
+
+img{
+    height: 30px;
+    width: 20px;
+}
+
+
+button{
+    height: 30px;
+    width: 40px;
+}
+
+h1{
+    color: white;
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Cabin", sans-serif;
+}
+
+.bloco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.76);
+    margin-top: 200px;
+    height: 450px;
+    width: 650px;
+}
+/* google fonts icons para o codigo */
