@@ -6,30 +6,32 @@
     <title>To-Do List </title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="init()">
     <div class="outer-container">
         <div class="todo-container">
             <h1>To-Do List</h1>
-            <div class="input-container">
-                <input type="text" placeholder="Adicionar nova tarefa" >
-                <button class="Adicionar">
-                    <img src="./img/add_circle_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="adicionar" title="adicionar">
+            <div class="input-container" id="Adicionar">
+                <!-- task input -->
+                <input type="text"  placeholder="Adicionar nova tarefa" >
+                <button class="Adicionar" onclick="salvarTarefa()">
+                    <img src="./img/add_circle_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.png" alt="adicionar" title="adicionar" >
                 </button>
             </div>
-            <ul class="todo-list">
+
+            <ul class="todo-list" id="tarefas">
                 <li>
-                    <input type="checkbox" id="task1">
+                    <input type="checkbox" >
                     <label for="task1">Tarefa adicionada</label>
                     <button class="edit">
-                        <img src="./img/cached_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Editar" title="Editar">
+                        <img src="./img/cached_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Editar" title="Editar"  >
                     </button>
                     <button class="delete">
-                        <img src="./img/delete_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Apagar" title="Apagar">
+                        <img src="./img/delete_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Apagar" title="Apagar"    >
                     </button>
                 </li>
             </ul>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
