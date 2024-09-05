@@ -1,0 +1,58 @@
+create database avaliacao_3bimestre;
+use  avaliacao_3bimestre;
+create table produtos(
+	id_produto int  auto_increment  primary key,
+    nome_produto varchar(255),
+    preco varchar(255),
+    categoria varchar(255)
+);
+create table estoque(
+	id_estoque varchar(255),
+	id_produto int  auto_increment ,
+    quantidade varchar(255),
+    localizacao varchar(255)
+);
+
+insert into produtos (nome_produto,preco,categoria)
+values ('smartphone x1 ','1500.00','eletronicos');
+
+insert into produtos (nome_produto,preco,categoria)
+values ('notebook pro ','3500.00','eletronicos');
+
+insert into produtos (nome_produto,preco,categoria)
+values ('cadeira gamer','800.00','moveis');
+
+insert into produtos (nome_produto,preco,categoria)
+values ('fone de ouvindo','200.00','acessorios');
+
+insert into produtos (nome_produto,preco,categoria)
+values ('mesa de escritorio','1200.00','moveis');
+
+
+
+
+insert into estoque (id_estoque,quantidade,localizacao)
+values ('1 ','50','deposito A');
+
+insert into estoque (id_estoque,quantidade,localizacao)
+values ('2 ','30','deposito B');
+
+insert into estoque (id_estoque,quantidade,localizacao)
+values ('3 ','20','deposito A');
+
+insert into estoque (id_estoque,quantidade,localizacao)
+values ('4 ','100','deposito C');
+
+insert into estoque (id_estoque,quantidade,localizacao)
+values ('5 ','10','deposito B');
+
+
+
+
+select quantidade,nome_produto
+from produtos 
+inner join estoque  on produtos.id_produto=estoque.id_produto;
+
+select *
+from produtos 
+where preco between 1000.00 and 3500.00;
